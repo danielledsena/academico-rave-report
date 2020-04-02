@@ -1,6 +1,6 @@
 object Form_permissoes: TForm_permissoes
-  Left = 485
-  Top = 259
+  Left = 327
+  Top = 208
   BorderIcons = [biSystemMenu]
   BorderStyle = bsSingle
   Caption = 'Permiss'#245'es'

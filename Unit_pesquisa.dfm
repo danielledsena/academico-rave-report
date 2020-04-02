@@ -1,6 +1,6 @@
 object Form_pesquisa: TForm_pesquisa
-  Left = 345
-  Top = 189
+  Left = 328
+  Top = 200
   BorderIcons = [biSystemMenu]
   BorderStyle = bsSingle
   Caption = 'Pesquisa'

@@ -1,6 +1,6 @@
 object Form_instrutores: TForm_instrutores
-  Left = 348
-  Top = 225
+  Left = 332
+  Top = 197
   BorderIcons = [biSystemMenu]
   BorderStyle = bsSingle
   Caption = 'Instrutores'
@@ -181,7 +181,7 @@ object Form_instrutores: TForm_instrutores
     Left = 128
     Top = 248
     Width = 49
-    Height = 25
+    Height = 21
     MaxLength = 3
     TabOrder = 6
   end
@@ -189,7 +189,7 @@ object Form_instrutores: TForm_instrutores
     Left = 184
     Top = 248
     Width = 121
-    Height = 25
+    Height = 21
     MaxLength = 14
     TabOrder = 7
   end
@@ -197,7 +197,7 @@ object Form_instrutores: TForm_instrutores
     Left = 312
     Top = 248
     Width = 57
-    Height = 25
+    Height = 21
     MaxLength = 1
     TabOrder = 8
   end
@@ -205,7 +205,7 @@ object Form_instrutores: TForm_instrutores
     Left = 128
     Top = 200
     Width = 369
-    Height = 25
+    Height = 21
     MaxLength = 30
     TabOrder = 9
   end
@@ -213,7 +213,7 @@ object Form_instrutores: TForm_instrutores
     Left = 128
     Top = 152
     Width = 105
-    Height = 25
+    Height = 21
     MaxLength = 10
     TabOrder = 10
   end

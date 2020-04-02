@@ -1,6 +1,6 @@
 object Form_splash: TForm_splash
-  Left = 248
-  Top = 166
+  Left = 326
+  Top = 206
   BorderStyle = bsDialog
   Caption = 'Splash'
   ClientHeight = 442

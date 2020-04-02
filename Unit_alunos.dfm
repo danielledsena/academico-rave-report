@@ -1,10 +1,10 @@
-object Form_cursos: TForm_cursos
+object Form_alunos: TForm_alunos
   Left = 333
-  Top = 198
+  Top = 221
   BorderIcons = [biSystemMenu]
   BorderStyle = bsSingle
-  Caption = 'Cursos'
-  ClientHeight = 441
+  Caption = 'Alunos'
+  ClientHeight = 420
   ClientWidth = 912
   Color = clBtnFace
   Font.Charset = ANSI_CHARSET
@@ -18,21 +18,42 @@ object Form_cursos: TForm_cursos
   PixelsPerInch = 96
   TextHeight = 13
   object Label1: TLabel
-    Left = 128
-    Top = 208
-    Width = 96
+    Left = 112
+    Top = 120
+    Width = 76
     Height = 13
-    Caption = 'C'#243'digo do Curso'
+    Caption = 'C'#243'digo Aluno'
   end
   object Label2: TLabel
-    Left = 256
-    Top = 208
-    Width = 89
+    Left = 112
+    Top = 168
+    Width = 33
     Height = 13
-    Caption = 'Nome do Curso'
+    Caption = 'Nome'
+  end
+  object Label3: TLabel
+    Left = 112
+    Top = 216
+    Width = 33
+    Height = 13
+    Caption = 'Idade'
+  end
+  object Label4: TLabel
+    Left = 176
+    Top = 216
+    Width = 49
+    Height = 13
+    Caption = 'Telefone'
+  end
+  object Label5: TLabel
+    Left = 304
+    Top = 216
+    Width = 29
+    Height = 13
+    Caption = 'Sexo'
   end
   object btn_novo: TBitBtn
-    Left = 128
+    Left = 112
     Top = 280
     Width = 75
     Height = 25
@@ -55,7 +76,7 @@ object Form_cursos: TForm_cursos
     NumGlyphs = 2
   end
   object btn_salvar: TBitBtn
-    Left = 208
+    Left = 192
     Top = 280
     Width = 75
     Height = 25
@@ -78,7 +99,7 @@ object Form_cursos: TForm_cursos
     NumGlyphs = 2
   end
   object btn_alterar: TBitBtn
-    Left = 288
+    Left = 272
     Top = 280
     Width = 75
     Height = 25
@@ -101,7 +122,7 @@ object Form_cursos: TForm_cursos
     NumGlyphs = 2
   end
   object btn_cancelar: TBitBtn
-    Left = 368
+    Left = 352
     Top = 280
     Width = 75
     Height = 25
@@ -124,7 +145,7 @@ object Form_cursos: TForm_cursos
     NumGlyphs = 2
   end
   object btn_excluir: TBitBtn
-    Left = 448
+    Left = 432
     Top = 280
     Width = 75
     Height = 25
@@ -147,7 +168,7 @@ object Form_cursos: TForm_cursos
     NumGlyphs = 2
   end
   object btn_fechar: TBitBtn
-    Left = 528
+    Left = 512
     Top = 280
     Width = 75
     Height = 25
@@ -157,28 +178,52 @@ object Form_cursos: TForm_cursos
     Kind = bkAbort
   end
   object edt_cod: TEdit
-    Left = 128
-    Top = 224
+    Left = 112
+    Top = 136
     Width = 121
-    Height = 21
-    MaxLength = 3
+    Height = 25
+    MaxLength = 10
     TabOrder = 6
   end
   object edt_nome: TEdit
-    Left = 256
-    Top = 224
-    Width = 241
-    Height = 21
-    MaxLength = 20
+    Left = 112
+    Top = 184
+    Width = 337
+    Height = 25
+    MaxLength = 30
     TabOrder = 7
   end
+  object edt_idade: TEdit
+    Left = 112
+    Top = 232
+    Width = 57
+    Height = 25
+    MaxLength = 3
+    TabOrder = 8
+  end
+  object edt_telefone: TEdit
+    Left = 176
+    Top = 232
+    Width = 121
+    Height = 25
+    MaxLength = 14
+    TabOrder = 9
+  end
+  object edt_sexo: TEdit
+    Left = 304
+    Top = 232
+    Width = 57
+    Height = 25
+    MaxLength = 1
+    TabOrder = 10
+  end
   object btn_localizar: TBitBtn
-    Left = 504
-    Top = 224
-    Width = 97
+    Left = 240
+    Top = 136
+    Width = 105
     Height = 25
     Caption = 'Localizar'
-    TabOrder = 8
+    TabOrder = 11
     OnClick = btn_localizarClick
     Glyph.Data = {
       76010000424D7601000000000000760000002800000020000000100000000100
@@ -198,7 +243,7 @@ object Form_cursos: TForm_cursos
   object ADOQuery_aux: TADOQuery
     Connection = Form_logon.ConexaoBD
     Parameters = <>
-    Left = 616
-    Top = 280
+    Left = 368
+    Top = 232
   end
 end

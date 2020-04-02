@@ -1,10 +1,10 @@
 object Form_menu: TForm_menu
-  Left = 337
-  Top = 234
+  Left = 330
+  Top = 207
   BorderIcons = [biSystemMenu]
   BorderStyle = bsSingle
   Caption = 'Menu - Gerenciador de Cursos'
-  ClientHeight = 442
+  ClientHeight = 445
   ClientWidth = 912
   Color = clBtnFace
   Font.Charset = ANSI_CHARSET
@@ -93,6 +93,7 @@ object Form_menu: TForm_menu
     Height = 25
     Caption = 'Cadastro de Alunos'
     TabOrder = 3
+    OnClick = btn_cadalunosClick
     Glyph.Data = {
       76010000424D7601000000000000760000002800000020000000100000000100
       04000000000000010000120B0000120B00001000000000000000000000000000
@@ -115,6 +116,7 @@ object Form_menu: TForm_menu
     Height = 25
     Caption = 'Matr'#237'culas'
     TabOrder = 4
+    OnClick = btn_matriculasClick
     Glyph.Data = {
       76010000424D7601000000000000760000002800000020000000100000000100
       04000000000000010000120B0000120B00001000000000000000000000000000

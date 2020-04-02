@@ -1,6 +1,6 @@
 object Form_turmas: TForm_turmas
-  Left = 320
-  Top = 239
+  Left = 332
+  Top = 214
   BorderIcons = [biSystemMenu]
   BorderStyle = bsSingle
   Caption = 'Turmas'
@@ -174,7 +174,7 @@ object Form_turmas: TForm_turmas
     Left = 128
     Top = 128
     Width = 121
-    Height = 25
+    Height = 21
     MaxLength = 9
     TabOrder = 6
   end
@@ -182,7 +182,7 @@ object Form_turmas: TForm_turmas
     Left = 264
     Top = 128
     Width = 121
-    Height = 25
+    Height = 21
     MaxLength = 6
     TabOrder = 7
     OnEnter = edt_valorEnter
@@ -192,7 +192,7 @@ object Form_turmas: TForm_turmas
     Left = 128
     Top = 184
     Width = 313
-    Height = 25
+    Height = 21
     MaxLength = 20
     TabOrder = 8
   end
@@ -200,7 +200,7 @@ object Form_turmas: TForm_turmas
     Left = 128
     Top = 240
     Width = 313
-    Height = 25
+    Height = 21
     MaxLength = 30
     TabOrder = 9
   end

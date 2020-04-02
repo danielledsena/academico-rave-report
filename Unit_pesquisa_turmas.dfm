@@ -1,6 +1,6 @@
 object Form_pesquisa_turmas: TForm_pesquisa_turmas
-  Left = 320
-  Top = 260
+  Left = 333
+  Top = 199
   BorderIcons = [biSystemMenu]
   BorderStyle = bsSingle
   Caption = 'Pesquisa Turma'
@@ -47,7 +47,7 @@ object Form_pesquisa_turmas: TForm_pesquisa_turmas
     Left = 312
     Top = 112
     Width = 161
-    Height = 25
+    Height = 21
     TabOrder = 1
   end
   object grid_pesquisa_turma: TDBGrid
