@@ -1,6 +1,6 @@
 object Form_logon: TForm_logon
-  Left = 284
-  Top = 227
+  Left = 375
+  Top = 214
   BorderIcons = [biSystemMenu]
   BorderStyle = bsSingle
   Caption = 'Logon'

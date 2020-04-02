@@ -23,6 +23,9 @@ type
     procedure FormShow(Sender: TObject);
     procedure btn_controleClick(Sender: TObject);
     procedure btn_fecharClick(Sender: TObject);
+    procedure btn_cadcursosClick(Sender: TObject);
+    procedure btn_cadinstrutoresClick(Sender: TObject);
+    procedure btn_cadturmasClick(Sender: TObject);
   private
     { Private declarations }
   public
@@ -35,7 +38,7 @@ var
 
 implementation
 
-uses Unit_logon, Unit_usuarios;
+uses Unit_logon, Unit_usuarios, Unit_cursos, Unit_instrutores, Unit_turmas;
 
 {$R *.dfm}
 
@@ -114,6 +117,21 @@ end;
 procedure TForm_menu.btn_fecharClick(Sender: TObject);
 begin
   Application.Terminate;
+end;
+
+procedure TForm_menu.btn_cadcursosClick(Sender: TObject);
+begin
+  form_cursos.showmodal;
+end;
+
+procedure TForm_menu.btn_cadinstrutoresClick(Sender: TObject);
+begin
+  Form_instrutores.showmodal;
+end;
+
+procedure TForm_menu.btn_cadturmasClick(Sender: TObject);
+begin
+  Form_turmas.showmodal;
 end;
 
 end.

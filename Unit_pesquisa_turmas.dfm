@@ -1,9 +1,9 @@
-object Form_pesquisa: TForm_pesquisa
-  Left = 345
-  Top = 189
+object Form_pesquisa_turmas: TForm_pesquisa_turmas
+  Left = 320
+  Top = 260
   BorderIcons = [biSystemMenu]
   BorderStyle = bsSingle
-  Caption = 'Pesquisa'
+  Caption = 'Pesquisa Turma'
   ClientHeight = 442
   ClientWidth = 912
   Color = clBtnFace
@@ -18,27 +18,46 @@ object Form_pesquisa: TForm_pesquisa
   PixelsPerInch = 96
   TextHeight = 13
   object Label1: TLabel
-    Left = 144
-    Top = 48
-    Width = 186
+    Left = 152
+    Top = 96
+    Width = 118
     Height = 13
-    Caption = 'Digite o nome ou parte do nome'
+    Caption = 'Campo da pesquisa:'
   end
-  object edt_nome: TEdit
-    Left = 144
-    Top = 64
-    Width = 305
-    Height = 21
-    TabOrder = 0
+  object Label2: TLabel
+    Left = 312
+    Top = 96
+    Width = 133
+    Height = 13
+    Caption = 'Texto a ser pesquisado'
   end
-  object grid_pesquisa: TDBGrid
-    Left = 144
+  object cb_campo: TComboBox
+    Left = 152
     Top = 112
-    Width = 489
-    Height = 209
-    DataSource = ds_pesquisa
-    Options = [dgTitles, dgIndicator, dgColumnResize, dgColLines, dgRowLines, dgTabs, dgRowSelect, dgConfirmDelete, dgCancelOnExit]
+    Width = 145
+    Height = 21
+    ItemHeight = 13
+    TabOrder = 0
+    Items.Strings = (
+      'C'#243'digo Turma'
+      'Nome Curso'
+      'Nome Instrutor')
+  end
+  object edt_texto: TEdit
+    Left = 312
+    Top = 112
+    Width = 161
+    Height = 25
     TabOrder = 1
+  end
+  object grid_pesquisa_turma: TDBGrid
+    Left = 152
+    Top = 152
+    Width = 513
+    Height = 193
+    DataSource = ds_pesquisa_turma
+    Options = [dgTitles, dgIndicator, dgColumnResize, dgColLines, dgRowLines, dgTabs, dgRowSelect, dgConfirmDelete, dgCancelOnExit]
+    TabOrder = 2
     TitleFont.Charset = ANSI_CHARSET
     TitleFont.Color = clWindowText
     TitleFont.Height = -11
@@ -46,12 +65,12 @@ object Form_pesquisa: TForm_pesquisa
     TitleFont.Style = []
   end
   object btn_pesquisar: TBitBtn
-    Left = 456
-    Top = 64
-    Width = 83
+    Left = 480
+    Top = 112
+    Width = 89
     Height = 25
     Caption = 'Pesquisar'
-    TabOrder = 2
+    TabOrder = 3
     OnClick = btn_pesquisarClick
     Glyph.Data = {
       76010000424D7601000000000000760000002800000020000000100000000100
@@ -69,12 +88,12 @@ object Form_pesquisa: TForm_pesquisa
     NumGlyphs = 2
   end
   object btn_limpar: TBitBtn
-    Left = 544
-    Top = 64
-    Width = 83
+    Left = 576
+    Top = 112
+    Width = 89
     Height = 25
     Caption = 'Limpar'
-    TabOrder = 3
+    TabOrder = 4
     OnClick = btn_limparClick
     Glyph.Data = {
       76010000424D7601000000000000760000002800000020000000100000000100
@@ -92,12 +111,12 @@ object Form_pesquisa: TForm_pesquisa
     NumGlyphs = 2
   end
   object btn_selecionar: TBitBtn
-    Left = 264
-    Top = 336
-    Width = 97
+    Left = 304
+    Top = 360
+    Width = 89
     Height = 25
     Caption = 'Selecionar'
-    TabOrder = 4
+    TabOrder = 5
     OnClick = btn_selecionarClick
     Glyph.Data = {
       76010000424D7601000000000000760000002800000020000000100000000100
@@ -115,24 +134,24 @@ object Form_pesquisa: TForm_pesquisa
     NumGlyphs = 2
   end
   object btn_cancelar: TBitBtn
-    Left = 368
-    Top = 336
-    Width = 97
+    Left = 408
+    Top = 360
+    Width = 89
     Height = 25
     Caption = 'Cancelar'
-    TabOrder = 5
+    TabOrder = 6
     OnClick = btn_cancelarClick
     Kind = bkAbort
   end
-  object ADOQuery_pesquisa: TADOQuery
+  object ADOQuery_pesquisa_turma: TADOQuery
     Connection = Form_logon.ConexaoBD
     Parameters = <>
     Left = 168
-    Top = 336
+    Top = 360
   end
-  object ds_pesquisa: TDataSource
-    DataSet = ADOQuery_pesquisa
+  object ds_pesquisa_turma: TDataSource
+    DataSet = ADOQuery_pesquisa_turma
     Left = 208
-    Top = 336
+    Top = 360
   end
 end
