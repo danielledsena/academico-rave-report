@@ -1,6 +1,6 @@
 object Form_logon: TForm_logon
-  Left = 331
-  Top = 205
+  Left = 295
+  Top = 183
   BorderIcons = [biSystemMenu]
   BorderStyle = bsSingle
   Caption = 'Logon'
@@ -68,6 +68,7 @@ object Form_logon: TForm_logon
   end
   object ConexaoBD: TADOConnection
     LoginPrompt = False
+    Provider = 'SQLOLEDB.1'
     Left = 504
     Top = 112
   end

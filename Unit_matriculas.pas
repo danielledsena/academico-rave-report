@@ -327,7 +327,7 @@ begin
          '        ALUNOS.NOME '+
          ' FROM MATRICULAS '+
          ' INNER JOIN ALUNOS '+
-         ' ON MATRICULAS.COD_ALUNO = ALUNO.COD_ALUNO';
+         ' ON MATRICULAS.COD_ALUNO = ALUNOS.COD_ALUNO';
 
   Form_pesquisa.sql_pesquisa:= sql;
   Form_pesquisa.ShowModal;

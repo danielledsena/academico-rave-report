@@ -1,6 +1,6 @@
 object Form_menu: TForm_menu
-  Left = 330
-  Top = 207
+  Left = 256
+  Top = 150
   BorderIcons = [biSystemMenu]
   BorderStyle = bsSingle
   Caption = 'Menu - Gerenciador de Cursos'
@@ -139,6 +139,7 @@ object Form_menu: TForm_menu
     Height = 25
     Caption = 'Lan'#231'amento de Aulas'
     TabOrder = 5
+    OnClick = btn_aulasClick
     Glyph.Data = {
       76010000424D7601000000000000760000002800000020000000100000000100
       04000000000000010000120B0000120B00001000000000000000000000000000
@@ -161,6 +162,7 @@ object Form_menu: TForm_menu
     Height = 25
     Caption = 'Frequ'#234'ncias'
     TabOrder = 6
+    OnClick = btn_frequenciasClick
     Glyph.Data = {
       76010000424D7601000000000000760000002800000020000000100000000100
       04000000000000010000120B0000120B00001000000000000000000000000000
@@ -183,6 +185,7 @@ object Form_menu: TForm_menu
     Height = 25
     Caption = 'Pagamento de Instrutores'
     TabOrder = 7
+    OnClick = btn_paginstrutoresClick
     Glyph.Data = {
       76010000424D7601000000000000760000002800000020000000100000000100
       04000000000000010000120B0000120B00001000000000000000000000000000
